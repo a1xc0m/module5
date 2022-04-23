@@ -1,16 +1,21 @@
+# Уровень 1.
+# Создайте класс StringVar для работы со строковым типом данных,
+# содержащий методы set() и get(). Метод set() служит для изменения
+# содержимого строки, get() – для получения содержимого строки. Создайте
+# объект типа StringVar и протестируйте его методы.
+
 class StringVar:
 
-    def __init__(self, text):
-        self.text = text
+    def __init__(self, string):
+        self.string = string
 
-    def set(self, text):
-        self.text = text
+    def set(self, string):
+        self.string = string
+        return self.string
 
     def get(self):
-        return self.text
+        return self.string
 
-
-a = StringVar(input('Введите слово: '))
-print(a.get())
-a.set('Изменено')
-print(a.get())
+s = StringVar(input('Введите значение: '))
+print(s.get())
+print(s.set('Привет'))
