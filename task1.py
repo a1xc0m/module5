@@ -16,6 +16,7 @@ class StringVar:
     def get(self):
         return self.string
 
-s = StringVar(input('Введите значение: '))
+
+s = StringVar(input('Поздоровайся: '))
 print(s.get())
 print(s.set('Привет'))
